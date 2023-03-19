@@ -23,11 +23,11 @@ To register your account:
 
 |  Command  |  Syntax   | Usage |
 | ----------| ----------|------ |
-|  /stats  |  Just /stats |Get your stats  |
-| /cookie  | /cookie username Cookie:  | "Register" your account |
-|/delcookie| Just /delcookie | "Unregister" your acoount |
+|  /stats  |  "/stats" |Get your stats  |
+| /cookie  | "/cookie username Cookie: ..."  | "Register" your account |
+|/delcookie| "/delcookie" | "Unregister" your acoount |
 
-# Notices
+# Notes
 
 1. The Solution with the cookies isn't perfect and I will be workin on using just your username and password
 2. Feel free to share any bugs you may encounter
