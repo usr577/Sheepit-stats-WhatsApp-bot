@@ -11,13 +11,10 @@ A simple WhatsApp bot written in JavaScript using Venom-bot to send the current 
 # Registration
 
 To register your account:
-1. go to https://www.sheepit-renderfarm.com/user/signin 
-2. press F12 to open the debug menu
-3. switch to the "network" tab
-4. log in on the site
-5. open any request that was made to www.sheepit-renderfarm.com and click on it
-6. Select the "Cookies" Tab in the top right of the debug window
-7. Send "/cookie Cookie: _ga=<your value>; gads=<your value>; gpi=<your value>; timezone=<your value>; phpbb3_h78im_u=<your value>; phpbb3_h78im_k=<your value(normally empty if so just wirte nothing so phpbb3_h78im_k=;)>; phpbb3_h78im_sid=<your value>; _gid=<your value>; REMEMBERME=<your value>; PHPSESSID=<your value>" to your bot
+1. download the cookiehelper.py
+2. change the username and password variables accordingly
+3. run it with python3
+7. Send "/cookie Cookie: REMEMBERME=<your value from coockiehelper>; PHPSESSID=<your value from coockiehelper>" to your bot
 
 # Commands
 
@@ -29,5 +26,5 @@ To register your account:
 
 # Notes
 
-1. The Solution with the cookies isn't perfect and I will be workin on using just your username and password
+1. The Solution with the cookies isn't perfect and I will be working on implementing cookiehelper in the main.js file
 2. Feel free to share any bugs you may encounter
