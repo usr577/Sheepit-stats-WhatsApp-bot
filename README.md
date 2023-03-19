@@ -17,6 +17,7 @@ To register your account:
 4. log in on the site
 5. open any request that was made to www.sheepit-renderfarm.com and click on it
 6. Select the "Cookies" Tab in the top right of the debug window
+7. Send "/cookie Cookie: _ga=<your value>; gads=<your value>; gpi=<your value>; timezone=<your value>; phpbb3_h78im_u=<your value>; phpbb3_h78im_k=<your value(normally empty if so just wirte nothing so phpbb3_h78im_k=;)>; phpbb3_h78im_sid=<your value>; _gid=<your value>; REMEMBERME=<your value>; PHPSESSID=<your value>" to your bot
 
 # Commands
 
@@ -25,3 +26,8 @@ To register your account:
 |  /stats  |  Just /stats |Get your stats  |
 | /cookie  | /cookie username Cookie:  | "Register" your account |
 |/delcookie| Just /delcookie | "Unregister" your acoount |
+
+# Notices
+
+1. The Solution with the cookies isn't perfect and I will be workin on using just your username and password
+2. Feel free to share any bugs you may encounter
