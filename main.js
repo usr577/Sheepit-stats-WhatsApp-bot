@@ -26,7 +26,7 @@ venom
 function start(client) {
   client.onMessage((message) => {
     if (message.body === '/stats' && message.isGroupMsg === false) {  
-      fs.readFile('cookies.ck', 'utf8', (err, data) => {
+      fs.readFile('cookie.txt', 'utf8', (err, data) => {
         if (err) {
           console.error(err);
           return;
@@ -78,7 +78,7 @@ function start(client) {
           })
         } else {
           client
-            .sendText(message.from, `You aren't registered yet!\nRegister using the "/cookie Username Cookie:..." command.`)
+            .sendText(message.from, `You aren't registered yet!\nRegister using the "/cookie Username Cookie: ..." command.`)
             .then((result) => {
               console.log('Result: ', result); //return object success
             })
@@ -89,7 +89,7 @@ function start(client) {
       }); 
     }
     if (message.body.includes("/cookie ") && message.isGroupMsg === false) {
-      fs.readFile('cookies.ck', 'utf8', (err, data) => {
+      fs.readFile('cookie.txt', 'utf8', (err, data) => {
         if (err) {
           console.error(err);
           return;
@@ -105,7 +105,7 @@ function start(client) {
               console.error('Error when sending: ', erro); //return object error
             });
         } else {
-          fs.readFile('cookies.ck', 'utf8', (err, data) => {
+          fs.readFile('cookie.txt', 'utf8', (err, data) => {
             if (err) {
               console.error(err);
               return;
@@ -121,7 +121,7 @@ function start(client) {
               })
               .then(profileResponse => {
                 if(profileResponse.data.includes("Points")){
-                  fs.stat('cookies.ck', (err, stats) => {
+                  fs.stat('cookie.txt', (err, stats) => {
                     if (err) {
                       console.error(err);
                       return;
@@ -131,7 +131,7 @@ function start(client) {
                     } else {
                       global.mdata = data + "/" + message.from + "/" + arr[1] + "/" + cookie;
                     }
-                    fs.writeFile('cookies.ck', mdata, function(err) {
+                    fs.writeFile('cookie.txt', mdata, function(err) {
                       if (err) {
                         console.error(err);
                       }
@@ -147,7 +147,7 @@ function start(client) {
                     });
                 } else {
                   client
-                    .sendText(message.from, `Your Username or cookie isn't correct, the syntax of "/cookie" is "/cookie Username Cookie:..."`)
+                    .sendText(message.from, `Your Username or cookie isn't correct, the syntax of "/cookie" is "/cookie Username Cookie: ..."`)
                     .then((result) => {
                       console.log('Result: ', result); //return object success
                     })
@@ -158,7 +158,7 @@ function start(client) {
               });
             } else {
               client
-                .sendText(message.from, `The syntax of "/cookie" is "/cookie Username Cookie:..."`)
+                .sendText(message.from, `The syntax of "/cookie" is "/cookie Username Cookie: ..."`)
                 .then((result) => {
                   console.log('Result: ', result); //return object success
                 })
@@ -171,7 +171,7 @@ function start(client) {
       });
     }
     if (message.body === "/delcookie" && message.isGroupMsg === false) {
-      fs.readFile('cookies.ck', 'utf8', (err, data) => {
+      fs.readFile('cookie.txt', 'utf8', (err, data) => {
         if (err) {
           console.error(err);
           return;
@@ -183,7 +183,7 @@ function start(client) {
           datar.splice(cl, 1);
           datar.splice(cl, 1);
           var data = datar.join('/');
-          fs.writeFile('cookies.ck', data, function(err) {
+          fs.writeFile('cookie.txt', data, function(err) {
             if (err) {
               console.error(err);
             }
@@ -198,7 +198,7 @@ function start(client) {
             });
         } else {
           client
-            .sendText(message.from, `You aren't registered yet, you can register using "/cookie Username Cookie:..."`)
+            .sendText(message.from, `You aren't registered yet, you can register using "/cookie Username Cookie: ..."`)
             .then((result) => {
               console.log('Result: ', result); //return object success
             })
