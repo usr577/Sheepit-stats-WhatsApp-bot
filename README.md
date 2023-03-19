@@ -11,10 +11,10 @@ A simple WhatsApp bot written in JavaScript using Venom-bot to send you the curr
 # Registration
 
 To register your account:
-1. download the cookiehelper.py
-2. change the username and password variables accordingly
-3. run it with python3
-7. Send ` /cookie Cookie: REMEMBERME=<your value from coockiehelper>; PHPSESSID=<your value from coockiehelper> ` to your bot
+1. Download the cookiehelper.py file
+2. Change the username and password variables accordingly
+3. Run it with python3
+4. Send ` /cookie Cookie: REMEMBERME=<your value from coockiehelper>; PHPSESSID=<your value from coockiehelper> ` to your bot
 
 # Commands
 
@@ -28,4 +28,4 @@ To register your account:
 
 1. The Solution with the cookies isn't perfect and I will be working on implementing cookiehelper in the main.js file
 2. Feel free to share any bugs you may encounter
-3. You can at the moment only use one account per phone number
+3. At the moment you can only use one account per phone number
