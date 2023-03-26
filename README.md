@@ -14,7 +14,7 @@ To register your account:
 1. Download the cookiehelper.py file
 2. Change the username and password variables accordingly
 3. Run it with python3
-4. Send ` /cookie Cookie: REMEMBERME=<your value from coockiehelper>; PHPSESSID=<your value from coockiehelper> ` to your bot
+4. Send ` /cookie username Cookie: REMEMBERME=<your value from coockiehelper>; PHPSESSID=<your value from coockiehelper> ` to your bot
 
 # Commands
 
