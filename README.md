@@ -29,3 +29,5 @@ To register your account:
 1. The Solution with the cookies isn't perfect and I will be working on implementing cookiehelper in the main.js file
 2. Feel free to share any bugs you may encounter
 3. At the moment you can only use one account per phone number
+
+# Telegram version at https://github.com/usr577/Sheepit-stats-telegram-bot
